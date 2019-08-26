@@ -31,3 +31,23 @@
     transform: rotate(360deg);
   }
 }
+
+#grid-container{
+  display: grid;
+  grid-template-areas:
+  'sidebar maincontent';
+  background-color: #000;
+  grid-gap: 1px;
+}
+
+#sidebar{
+  grid-area: sidebar;
+  background-color: #fff;
+  height: 100vh;
+}
+
+#maincontent{
+  grid-area: maincontent;
+  background-color: #fff;
+  height: 100vh;
+}
